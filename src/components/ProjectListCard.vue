@@ -1,5 +1,5 @@
 <template>
-    
+
         <Card
             isStacked
             isShadow
