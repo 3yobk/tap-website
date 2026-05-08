@@ -1,51 +1,178 @@
 ---
-shortTitle: "Project Impulse"
-title: "AI Voice-Controlled Spring-Powered Jumping Robot"
-id: "project-impulse"
+shortTitle: Project Impulse
+title: AI Controlled Spring Powered Jumping Robot
+id: project-impulse
 
-desc: "Project Impulse is a compact spring-powered jumping robot designed to simulate a human foot-like launch mechanism. The robot uses a motor-driven winch system to compress high-force springs and release stored energy for controlled vertical jumps. A 3D-printed frame and linear rail system ensure stable and repeatable motion. The system is powered by a LiPo battery and controlled using a Raspberry Pi Pico, with a BTS7960 motor driver handling high-current motor control. A buck converter regulates voltage for safe electronics operation. Future enhancements include AI voice-based control using a Raspberry Pi Zero 2W, directional movement using servo-actuated joints, and stabilization/turning using ducted fans."
+imageLogoLight: ./robot.jpeg
+imageLogoDark: ./robot.jpeg
+imageTeam: ./projectImpulseTeamPhoto.png
 
-github: "https://github.com/TAP-GGC/Project-Impulse"
+desc: Teaching robotics, AI control systems, and spring-powered jumping mechanics with Project Impulse.
+github: https://github.com/TAP-GGC/Project-Impulse
 
-students:
-  - "christian-bacon"
-  - "tia-best"
-  - "eyob-kabeto"
+students: [
+        christian-bacon,
+            tamisha-best,
+                eyob-kabeto
+]
 
-instructors:
-  - "xin-xu"
-  - "wei-jin"
+instructors: [
+        xin-xu,
+            wei-jin
+]
 
-techs:
-  - "Raspberry Pi Pico"
-  - "BTS7960 motor driver"
-  - "DC gear motor"
-  - "Servo motors"
-  - "compression springs"
-  - "limit switches"
-  - "3D printing"
+techs: [
+        "raspberry-pi-pico",
+            "bts7960-motor-driver",
+                "dc-gear-motor",
+                    "servo-motors",
+                        "compression-springs",
+                            "limit-switches",
+                                "3d-printing"
+]
 
-events:
-  - "tap expo"
+videos: [
+    {src: "3EYQpeXznBA", caption: " Project Impulse Setup Instructions "},
+]
+events: [
+        "tap-expo",
+            "asf-piedmont-park",
+                "sst-stars-event",
+                    "norcross-cluster-innovation-showcase",
+                        "creates-conference"
+]
 
-semester: "Spring"
+semester: spring
 year: 2026
 
-levels:
-  - "college"
+levels: [
+        "college"
+]
 
-difficulty:
-  - "intermediate"
-  - "advanced"
+difficulty: [
+        "intermediate",
+            "advanced"
+]
 
-durationMins:
-  - 60
-  - 90
+durationMins: [
+        60,
+            90
+]
 
 publishedDate: 2026-04-16
 
-relatedIds:
-  - "project-m"
+relatedIds: []
 
-imageLogoLight: "./robot.jpeg"
+
+videoAd: "8xrLxFBG4A8"
+
+curator: [
+        
+]
+
 ---
+
+import { Image } from "astro:assets";
+import Photo from '/src/components/astro/Photo.astro';
+import Logo from '/src/components/astro/Logo.astro';
+import teamPhoto from './projectImpulseTeamPhoto.png';
+
+import raspberrypi from './raspberrypi.png';
+import servoMotor from './servo_motor.png';
+
+
+{/* Project Description */}
+
+Project Impulse is an AI-controlled spring-powered jumping robot designed to demonstrate how artificial intelligence, robotics, and mechanical engineering can work together in a real-world system. The robot uses a motor-driven spring compression system to store energy and launch itself vertically into the air. Our project combines electronics, programming, 3D printing, and mechanical design into one interactive robotics platform.
+
+The workshop teaches participants how AI can interact with physical hardware systems using simple electronic circuits and voice-controlled software. Students will learn how circuits work, how robotics systems are controlled, and how AI can communicate with hardware components in real time.
+
+Project Impulse also demonstrates how modern technologies such as Raspberry Pi controllers, motor drivers, servo systems, and 3D printed parts can be combined to build custom robotics projects from scratch.
+
+The Technology Ambassador Program at [GGC](http://www.ggc.edu/tap) strives to break misconceptions about the IT field by providing engaging and hands-on workshops for students of all backgrounds. TAP students create interactive projects that encourage interest in STEM, engineering, robotics, and computer science.
+
+## Team Members
+
+<Photo src={teamPhoto.src} alt="Project Impulse Team Photo" caption="From left to right: Christian Bacon, Eyob Kabeto, and Tamisha (Tia) Best"/>
+
+
+<br />
+
+## Outreach Activities
+
+1. TAP Expo, March 6, 2026, Georgia Gwinnett College: Promoted the IT field and demonstrated Project Impulse to college students.
+
+2. ASF @ Piedmont Park, March 21, 2026, Piedmont Park, Atlanta: Demonstrated the robot and AI systems to children and families interested in STEM and robotics.
+
+3. SST STaRS Event, April 24, 2026, Georgia Gwinnett College: Presented the semester-long project and demonstrated AI-controlled robotics.
+
+4. Norcross Cluster Innovation Showcase, April 25, 2026, Downtown Norcross: Showcased Project Impulse and explained the engineering and AI systems used in the robot.
+
+5. The 26th CREATES Conference, May 1, 2026, Georgia Gwinnett College: Demonstrated Project Impulse during the research and innovation showcase event.
+
+## Technology
+
+<Logo src={raspberrypi.src} alt="Raspberry Pi Pico"/>
+<Logo src={servoMotor.src} alt="Servo Motor"/>
+
+
+### Main Technologies Used
+
+* Raspberry Pi Pico
+* BTS7960 Motor Driver
+* DC Gear Motor
+* Servo Motors
+* Compression Springs
+* Limit Switches
+* 3D Printing
+
+These technologies were selected because they allowed our team to combine artificial intelligence, robotics, electronics, and mechanical engineering into a single interactive system. Participants are exposed to real-world engineering concepts while learning how AI systems can interact with physical hardware.
+
+# Project Setup & Installation
+
+- [Project Workshop Walkthrough PDF]()
+- [Project Impulse Setup Video](https://youtu.be/3EYQpeXznBA)
+
+
+
+## Steps
+
+1. Build the LED circuit using the breadboard, resistor, jumper wires, and Arduino Uno.
+
+2. Connect the circuit ground to the Arduino GND pin.
+
+3. Test the LED using the 3.3V output pin.
+
+4. Open the Delta AI software folder.
+
+5. Run the `run_windows` startup script.
+
+6. Install Python if prompted by the setup process.
+
+7. Wait for the Delta AI system to initialize.
+
+8. Move the LED power wire from the 3.3V pin to GPIO Pin 11.
+
+9. Use Delta AI commands such as:
+   * `Turn light on`
+   * `Blink light fast`
+   * `Blink light slowly`
+
+10. Observe how the AI system controls the physical electronics in real time.
+
+## Materials List
+
+| Amount | Materials | Dimension |
+| :----: | :----: | :----: |
+| 1 | Raspberry Pi Pico | n/a |
+| 1 | Arduino Uno | n/a |
+| 1 | Breadboard | n/a |
+| 1 | BTS7960 Motor Driver | n/a |
+| 1 | DC Gear Motor | n/a |
+| 2 | Servo Motors | n/a |
+| Multiple | Jumper Wires | n/a |
+| Multiple | Compression Springs | n/a |
+| 1 | LED | n/a |
+| 1 | Resistor | n/a |
+| Multiple | 3D Printed Parts | Custom |
+| 1 | Computer | n/a |
