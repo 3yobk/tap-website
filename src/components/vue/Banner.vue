@@ -41,5 +41,19 @@ export default{
     /*font-size: 125%;*/ /* 1rem */
     font-size: clamp(var(--agnostic-h5), 3vw, var(--agnostic-h4));
 }
+/* Mobile adjustments */
+@media (max-width: 750px) {
+  .banner {
+    padding: 1rem 1rem; /* reduce top/bottom and left/right padding */
+  }
 
+  .banner-content {
+    width: 95%; /* take more of the screen width */
+    padding: 1rem; /* reduce inner padding */
+  }
+
+  .banner h3 {
+    font-size: clamp(var(--agnostic-h6), 4vw, var(--agnostic-h5)); /* smaller text on mobile */
+  }
+}
 </style>
