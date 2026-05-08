@@ -3,8 +3,8 @@ shortTitle: Project Impulse
 title: AI Controlled Spring Powered Jumping Robot
 id: project-impulse
 
-imageLogoLight: ./robot.jpeg
-imageLogoDark: ./robot.jpeg
+imageLogoLight: ./Theta_staticFace.png
+imageLogoDark: ./Theta_staticFace.png
 imageTeam: ./projectImpulseTeamPhoto.png
 
 desc: Teaching robotics, AI control systems, and spring-powered jumping mechanics with Project Impulse.
@@ -31,9 +31,7 @@ techs: [
                                 "3d-printing"
 ]
 
-videos: [
-    {src: "3EYQpeXznBA", caption: " Project Impulse Setup Instructions "},
-]
+videos: []
 events: [
         "tap-expo",
             "asf-piedmont-park",
@@ -60,11 +58,8 @@ durationMins: [
 ]
 
 publishedDate: 2026-04-16
-
 relatedIds: []
 
-
-videoAd: "8xrLxFBG4A8"
 
 curator: [
         
@@ -79,6 +74,7 @@ import teamPhoto from './projectImpulseTeamPhoto.png';
 
 import raspberrypi from './raspberrypi.png';
 import servoMotor from './servo_motor.png';
+import thetaFace from './Theta_staticFace.png';
 
 
 {/* Project Description */}
@@ -90,6 +86,12 @@ The workshop teaches participants how AI can interact with physical hardware sys
 Project Impulse also demonstrates how modern technologies such as Raspberry Pi controllers, motor drivers, servo systems, and 3D printed parts can be combined to build custom robotics projects from scratch.
 
 The Technology Ambassador Program at [GGC](http://www.ggc.edu/tap) strives to break misconceptions about the IT field by providing engaging and hands-on workshops for students of all backgrounds. TAP students create interactive projects that encourage interest in STEM, engineering, robotics, and computer science.
+
+<p align="center">
+  <video width="500" controls autoplay muted loop>
+    <source src="/videos/Commercial_TMNT.mp4" type="video/mp4" />
+  </video>
+</p>
 
 ## Team Members
 
@@ -110,69 +112,41 @@ The Technology Ambassador Program at [GGC](http://www.ggc.edu/tap) strives to br
 
 5. The 26th CREATES Conference, May 1, 2026, Georgia Gwinnett College: Demonstrated Project Impulse during the research and innovation showcase event.
 
-## Technology
+## Impulse
 
-<Logo src={raspberrypi.src} alt="Raspberry Pi Pico"/>
-<Logo src={servoMotor.src} alt="Servo Motor"/>
+<p align="center">
+  <video
+    width="350"
+    controls
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto">
+    <source src="/videos/impulsejump.MP4" type="video/mp4" />
+  </video>
+</p>
 
+Project Impulse is a jumping robot that stores energy using large compression springs. A DC gear motor acts like a winch and slowly pulls fishing line to compress the springs, similar to clicking and compressing a pen.
 
-### Main Technologies Used
+As the motor tightens the line, the springs become more compressed and store more energy. Once the springs are fully compressed, a limit switch is triggered. This tells the robot to stop the motor so the springs are not over-compressed.
 
-* Raspberry Pi Pico
-* BTS7960 Motor Driver
-* DC Gear Motor
-* Servo Motors
-* Compression Springs
-* Limit Switches
-* 3D Printing
+Next, a servo motor rotates about 13 degrees to lock and hold the compressed spring mechanism in place. After the servo locks the system, the motor slightly unwinds the fishing line to create slack. This is important because it prevents the motor and winch from resisting the jump.
 
-These technologies were selected because they allowed our team to combine artificial intelligence, robotics, electronics, and mechanical engineering into a single interactive system. Participants are exposed to real-world engineering concepts while learning how AI systems can interact with physical hardware.
+When the robot is ready to jump, the servo quickly moves out of the way and releases the stored spring force all at once. The springs rapidly expand and launch the robot upward into the air.
 
-# Project Setup & Installation
+The Raspberry Pi Pico acts as the brain of the robot and controls the motor driver, servo motor, and limit switches during the entire jumping sequence.
 
-- [Project Workshop Walkthrough PDF]()
-- [Project Impulse Setup Video](https://youtu.be/3EYQpeXznBA)
+<p align="center">
+  <video width="900" controls>
+    <source src="/videos/ProjectImpulse.mp4" type="video/mp4" />
+  </video>
+</p>
 
+In our workshop, participants will first learn how to build a simple LED circuit using an Arduino Uno, breadboard, jumper wires, resistors, and LEDs. Students will learn how electricity flows through the circuit and how basic electronic components work together.
 
+After building the circuit, participants will connect it to Delta, our AI assistant inspired by Theta. Delta can control the LEDs using commands such as turning the light on or off, blinking the light quickly, or blinking it slowly. This helps demonstrate how artificial intelligence can interact with real hardware systems in real time.
 
-## Steps
+Participants will also be encouraged to experiment and make the project more challenging by adding additional LEDs, creating different blinking patterns, or even connecting buttons and switches to create more advanced interactions.
 
-1. Build the LED circuit using the breadboard, resistor, jumper wires, and Arduino Uno.
-
-2. Connect the circuit ground to the Arduino GND pin.
-
-3. Test the LED using the 3.3V output pin.
-
-4. Open the Delta AI software folder.
-
-5. Run the `run_windows` startup script.
-
-6. Install Python if prompted by the setup process.
-
-7. Wait for the Delta AI system to initialize.
-
-8. Move the LED power wire from the 3.3V pin to GPIO Pin 11.
-
-9. Use Delta AI commands such as:
-   * `Turn light on`
-   * `Blink light fast`
-   * `Blink light slowly`
-
-10. Observe how the AI system controls the physical electronics in real time.
-
-## Materials List
-
-| Amount | Materials | Dimension |
-| :----: | :----: | :----: |
-| 1 | Raspberry Pi Pico | n/a |
-| 1 | Arduino Uno | n/a |
-| 1 | Breadboard | n/a |
-| 1 | BTS7960 Motor Driver | n/a |
-| 1 | DC Gear Motor | n/a |
-| 2 | Servo Motors | n/a |
-| Multiple | Jumper Wires | n/a |
-| Multiple | Compression Springs | n/a |
-| 1 | LED | n/a |
-| 1 | Resistor | n/a |
-| Multiple | 3D Printed Parts | Custom |
-| 1 | Computer | n/a |
+The goal of the workshop is to show that robotics, AI, and electronics can be fun, creative, and beginner-friendly while inspiring curiosity about engineering and technology. Go to our github for more information.
