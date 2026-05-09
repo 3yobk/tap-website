@@ -28,6 +28,7 @@ const styles = useCssModule();
 
 const props = withDefaults(defineProps<BreadcrumbProps>(), { type: "" });
 
+
 const breadcrumbClasses = computed(() => ({
   [styles.breadcrumb]: true,
   [styles[`breadcrumb-${props.type}`]]: !!props.type,

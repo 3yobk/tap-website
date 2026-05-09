@@ -1,0 +1,152 @@
+---
+shortTitle: Pi - AI
+title: Using Gemini to Teach Technological Topics
+id: pi---ai
+desc : Ai web based application that teaches the user any technological subject through interactive study planning and flashcard generation.
+github: https://github.com/TAP-GGC/Pi-AI
+students: [
+  "Keyvaun-Herring",
+  "lorena-salazar",
+  "kyla-thorpe"
+]
+instructors: [
+  "wei-jin",
+  "xin-xu"
+] 
+techs: [
+  "ai",
+  "gemini",
+  "python",
+  "html",
+  "javascript",
+  "css"
+]
+events: [
+  "atlanta science festival",
+  "tap expo",
+  "stars",
+  "create"
+]
+semester: spring
+year: 2026
+levels: [
+  "middle-school",
+  "high-school",
+  "college"
+] 
+difficulty: [
+  "beginner"
+] 
+durationMins: [
+  15
+]
+publishedDate: 2026-04-16
+relatedIds: []
+
+image: "./Pi-Transparent.png"
+imageLogoLight: "./Pi-Transparent.png"
+imageLogoDark: "./Pi-Transparent.png"
+
+images: [
+  {src: 'ASF@PiedmontPark.png', alt: 'ASF at Piedmont Park'},
+  {src: 'TAPExpo.png', alt: 'TAP Expo Spring2026'},
+  {src: 'teamPhoto.jpg', alt: 'ASF at GGC Team Photo Spring2026'}
+  
+]
+
+
+---
+
+
+
+## 👐 Outreach
+TAP Expo March 5, 2026, Georgia Gwinnett College: to promote the IT field and encourage college students to sign up for TAP.
+Atlanta Science Festival (ASF) March 7, 2026 Georgia Gwinnett College: A local event displaying STEM topics to allow young children in the community to learn about the sciences.
+ASF @ Atlanta March 21, 2026 Atlanta: On a much larger scale than the GGC event, ASF features universities and brands from around Atlanta to encourage the community to get involved with local clubs, find interest in their future school, and learn about different facets of science such as Information Technology.
+Super Saturday April 4, 2026 - Georgia Gwinnett College: An engaging day of demonstrating STEM projects and hands on learning to middle school students.
+
+## 🔎 Similar Projects
+If you're interested projects that utilize AI, check out AIDiva(https://github.com/TAP-GGC/AiDiva)!
+
+## 💻 Technology
+
+Python is a high level programming language designed to be easily readable and debuggable, and is one of the most widely used programming languages to build website, software, automate tasks, and analyse data.
+Python was used to system prompt our AI model and similarly acts in the workshop to demonstrate how students can train data to create their own.
+Gemini is a Large Language Model developed by Google
+HTML, CSS, JavaScript
+
+## Project Setup/Installation
+Follow the steps below to get Pi&AI running on your computer. No coding experience needed!
+
+## Step 1 — Get a Gemini API Key
+Pi&AI is powered by Google's Gemini AI. You will need a free API key to use it.
+
+Go to Google AI Studio
+Sign in with a Google account
+Click "Create API key" and copy the key somewhere safe
+## Step 2 — Download the Project
+At the top of this GitHub page, click the green "Code" button
+Select "Download ZIP"
+Once downloaded, extract/unzip the folder to your Desktop or anywhere you like
+## Step 3 — Install Visual Studio Code (VS Code)
+VS Code is a free code editor that makes it easy to view and edit project files.
+
+Go to code.visualstudio.com
+Click the Download button for your operating system (Windows, Mac, or Linux)
+Run the installer and follow the on-screen instructions
+Once installed, open VS Code
+Then open the extracted folder into the editor
+Recommended Extension:
+
+Open VS Code, click the Extensions icon on the left sidebar (or press Ctrl+Shift+X)
+Search for "Python" and install the extension by Microsoft — this gives you syntax highlighting and makes working with the project much easier
+## Step 4 — Install Python
+If you do not already have Python installed:
+
+Go to python.org/downloads
+Download and install Python 3.8 or higher
+During install, check the box that says "Add Python to PATH"
+To verify it installed correctly, open the terminal in VS Code (Terminal → New Terminal or press Ctrl+ `) and run:
+
+python --version
+## Step 5 — Create a Virtual Environment
+A virtual environment keeps the project's packages separate from the rest of your computer. This is required before installing dependencies.
+
+In VS Code, open the terminal (Terminal → New Terminal or press Ctrl+ `)
+
+The terminal should already be in your project folder. If not, use File → Open Folder to open the extracted project folder first
+
+Create the virtual environment:
+
+python -m venv .venv
+Activate it:
+
+Windows:
+.venv\Scripts\activate
+Mac/Linux:
+source .venv/bin/activate
+You will know it is active when you see (.venv) at the start of your terminal line.
+
+## Step 6 — Install Dependencies
+With your virtual environment active, run this in the VS Code terminal:
+
+pip install -r backend/requirements.txt
+## Step 7 — Add Your API Key
+In VS Code's file explorer (left sidebar), open the backend folder
+Right-click inside the backend folder and select "New File", name it .env
+Add this line to the file:
+GEMINI_API_KEY=paste_your_api_key_here
+Replace paste_your_api_key_here with the key you copied in Step 1, then save the file
+## Step 8 — Run the App
+In the VS Code terminal, run:
+python backend/app.py
+You should see output that includes a line like:
+Running on http://127.0.0.1:5000
+Open your browser and go to http://127.0.0.1:5000
+Pi&AI should now be running! Start chatting with Pi to explore tech topics, generate flashcards, and build study plans.
+
+## Troubleshooting
+python not found -->	Try python3 instead of python,
+pip not found	--> Try pip3 instead of pip,
+API key error	--> Double-check your .env file has no extra spaces around the = sign,
+Port already in use	--> Close other terminals and try again

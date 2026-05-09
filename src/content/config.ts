@@ -22,6 +22,7 @@ const eventCollection = defineCollection({
     images: z.array(z.object({
     src: image().refine((img) => img.width <= 1500, {
       message: `Image is too large! Convert images to be less than 1500 pixels wide.`,
+      path: [ "images" ]
     }),
     alt: z.string() })).optional(),
   }),
@@ -29,11 +30,12 @@ const eventCollection = defineCollection({
 const eventPhotoValidator = (img) => img.width && Math.abs(img.width / img.height - 0.75) < 0.2;
 const eventPhotoValidatorMsg = (img) => ({
   message: `Event photo image must 2x3 portrait aspect ratio!\n${img.src} is ${img.width}x${img.height}.`,
+  path: [ "imageEvent" ]
 });
 
 const imageLogoValidator = (img) => Math.abs(img.width / img.height - 1) < 0.2;
 const imageLogoValidatorMsg = (img) => ({
-  message: `Logo image must be close to square aspect ratio!\n${img.src} is ${img.width}x${img.height}.`,
+  message: `Logo image must be close to square aspect ratio!\n${img.src} is ${img.width}x${img.height}.`
 });
 const projectCollection = defineCollection({
   type: 'content', // v2.5.0 and later
