@@ -10,7 +10,7 @@ Create a folder and a mdx file under `/src/content/students/` under the appropri
 1. Create a folder:
 ![Create Directory](./studentfolders.png)
 
-2. Create a Markdown file within the folder (using CapitalCase). Then, copy the contents of the `JohnDoe/JohnDoe.mdx` into your new file to use as template
+2. Create a Markdown file within the folder (using CapitalCase). Then, copy and MODIFY the contents of the `JohnDoe/JohnDoe.mdx` into your new file to use as template. DELETE the parts that you don't need. Do not keep the default fake information.
 ![Create Markdown File](./johnDoemdx.png)
 
 3. Every Student Profile requires an **square** image. Attach desired image within folder as well. Make sure photos are cropped to the square proportions before adding it to the appropriate folder. the image file type does not matter
